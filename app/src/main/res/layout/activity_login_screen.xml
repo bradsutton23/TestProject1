@@ -15,12 +15,12 @@
         android:layout_marginTop="72dp"
         android:text="Username:"
         android:textSize="24sp"
-        app:layout_constraintEnd_toStartOf="@+id/editText_username"
+        app:layout_constraintEnd_toStartOf="@+id/UN"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText_username"
+        android:id="@+id/UN"
         android:layout_width="0dp"
         android:layout_height="53dp"
         android:layout_marginTop="53dp"
@@ -43,9 +43,9 @@
         android:layout_marginRight="1dp"
         android:text="Password:"
         android:textSize="24sp"
-        app:layout_constraintEnd_toStartOf="@+id/editText_password"
+        app:layout_constraintEnd_toStartOf="@+id/PW"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/editText_password" />
+        app:layout_constraintTop_toTopOf="@+id/PW" />
 
     <Button
         android:id="@+id/button_login"
@@ -56,7 +56,6 @@
         android:layout_marginEnd="66dp"
         android:layout_marginRight="66dp"
         android:layout_marginBottom="36dp"
-        android:onClick="openIdle"
         android:text="Login"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -65,16 +64,17 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editText_password"
+        android:id="@+id/PW"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="21dp"
         android:layout_marginRight="21dp"
         android:ems="10"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView_password"
-        app:layout_constraintTop_toBottomOf="@+id/editText_username" />
+        app:layout_constraintTop_toBottomOf="@+id/UN" />
 
     <Button
         android:id="@+id/button_create_user"
@@ -83,6 +83,7 @@
         android:layout_marginEnd="45dp"
         android:layout_marginRight="45dp"
         android:layout_marginBottom="38dp"
+        android:onClick="toCU"
         android:text="Create User"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

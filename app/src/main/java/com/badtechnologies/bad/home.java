@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
+
 
 
 public class home extends AppCompatActivity
@@ -89,7 +89,8 @@ public class home extends AppCompatActivity
             }
         });
     }
-    private float calBMI (float weight, float height) {
+    private float calBMI (float weight, float height)
+    {
         return  (float) (weight / (height * height)) * 703;
     }
 

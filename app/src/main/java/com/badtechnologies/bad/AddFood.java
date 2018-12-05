@@ -14,9 +14,6 @@ import android.widget.Toast;
 public class AddFood extends AppCompatActivity implements AdapterView.OnItemSelectedListener
 {
 
-
-
-
     Spinner spinner;
     int total  = 0;
     int lastValue = 0;
@@ -33,10 +30,7 @@ public class AddFood extends AppCompatActivity implements AdapterView.OnItemSele
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
         spinner.setOnItemSelectedListener(this);
-
-
-
-    }
+     }
 
     public void onClick(View v)
     {

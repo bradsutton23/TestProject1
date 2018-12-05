@@ -26,6 +26,24 @@
         <item>Bacon (2 Slices 44 Calories)</item>
         <item>Milk (8 oz. 103 Calories)</item>
     </string-array>
+
+    <string-array name="username">
+        <item>BradSutton123</item>
+        <item>Will123</item>
+        <item>Kysa123</item>
+        <item>Maddy123</item>
+        <item>Wheat123</item>
+    </string-array>
+
+    <string-array name="passwords">
+        <item>123</item>
+        <item>234</item>
+        <item>345</item>
+        <item>456</item>
+        <item>567</item>
+    </string-array>
+
+
     <string name="title_activity_home">home</string>
 </resources>
 
