@@ -1,4 +1,33 @@
 <resources>
     <string name="app_name">!bad</string>
     <string name="title_activity_food_dbase_gui">FoodDBaseGUI</string>
+    <string name="output">Total Calories Consumed Today: </string>
+    <string name="add_food">Add Food</string>
+    <string name="remove_last">Remove Last</string>
+    <string-array name="fname">
+        <item>Bananas (1 Banana 90 Calories)</item>
+        <item>Apple (1 Apple 95 Calories)</item>
+        <item>Boiled-Egg (1 Boiled-Egg 77 Calories)</item>
+        <item>Avocado (1 Avocado 100 Calories)</item>
+        <item>Grape (12 Grapes 62 Calories)</item>
+        <item>Celery (3 Stalks 16 Calories)</item>
+        <item>Broccoli (1 Cup 30 Calories)</item>
+        <item>Potato (8 oz. 147 Calories)</item>
+        <item>Fried Catfish (8 oz. 199 Calories)</item>
+        <item>Hamburger (12 oz. 232 Calories)</item>
+        <item>Steak (6 oz. 128 Calories)</item>
+        <item>Orange (62 Calories)</item>
+        <item>Pizza (1 Slice 350 Calories)</item>
+        <item>Coke (88 Calories)</item>
+        <item>Water (0 Calories)</item>
+        <item>Chicken (8 oz. 115 Calories)</item>
+        <item>Beans (1 Can 246 Calories)</item>
+        <item>Sausage (5 oz. 120 Calories)</item>
+        <item>Bacon (2 Slices 44 Calories)</item>
+        <item>Milk (8 oz. 103 Calories)</item>
+    </string-array>
+    <string name="title_activity_home">home</string>
 </resources>
+
+
+

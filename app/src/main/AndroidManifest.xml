@@ -21,12 +21,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".Create_User" />
-        <activity android:name=".IdleScreen" />
+        <activity android:name=".AddFood" />
         <activity
-            android:name=".FoodDBaseGUI"
-            android:label="@string/title_activity_food_dbase_gui"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ExerciseDBaseGUI"></activity>
+            android:name=".home"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

@@ -43,18 +43,22 @@ public class Create_User extends AppCompatActivity {
         String type = "register";
         BackgroundWorker BGWorker = new BackgroundWorker(this);
         BGWorker.execute(type, str_username, str_password, str_firstname, str_lastname, str_gender, str_age, str_height, str_weight);
+        openMain(view);
+
+
     }
 
-    public void openCreateUserActivity()
+
+    public void openCreateUserActivity(View view)
     {
         Intent intent = new Intent(this, LoginScreen.class);
         startActivity(intent);
     }
 
-
-
-
-
-
+    public void openMain(View view)
+    {
+        Intent intent = new Intent(this, AddFood.class);
+        startActivity(intent);
+    }
 
 }

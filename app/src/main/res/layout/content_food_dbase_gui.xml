@@ -5,51 +5,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".FoodDBaseGUI"
-    tools:showIn="@layout/activity_food_dbase_gui">
+    tools:context=".Chill"
+    tools:showIn="@layout/activity_chill"
+    tools:ignore="ExtraText"><![CDATA[
 
-    <Button
-        android:id="@+id/button_Add_Item"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginEnd="3dp"
-        android:layout_marginRight="3dp"
-        android:layout_marginBottom="27dp"
-        android:text="Add Item"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button_Edit_Item"
-        app:layout_constraintStart_toStartOf="parent" />
+    ;
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toStartOf="@+id/button_Edit_Item"
+    app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
-        android:id="@+id/button_Edit_Item"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Edit Item"
-        app:layout_constraintBaseline_toBaselineOf="@+id/button_Delete_Item"
-        app:layout_constraintEnd_toStartOf="@+id/button_Delete_Item"
-        app:layout_constraintStart_toEndOf="@+id/button_Add_Item" />
 
-    <Button
-        android:id="@+id/button_Delete_Item"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginBottom="27dp"
-        android:text="Remove Item"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button_Edit_Item" />
+
+    ]]>
 
     <Button
         android:id="@+id/button_Return_To_Idle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="7dp"
-        android:layout_marginLeft="7dp"
-        android:layout_marginTop="66dp"
+        android:layout_width="105dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="68dp"
+        android:onClick="returnToIdle"
         android:text="Return"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

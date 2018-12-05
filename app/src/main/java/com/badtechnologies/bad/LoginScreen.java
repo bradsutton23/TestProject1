@@ -4,11 +4,8 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
 
 
 public class LoginScreen extends AppCompatActivity {
@@ -32,8 +29,6 @@ public class LoginScreen extends AppCompatActivity {
 
         UsernameET = (EditText)findViewById(R.id.editText_username);
         PasswordET = (EditText)findViewById(R.id.editText_password);
-
-
     }
 
     public void openCreateUserActivity()
@@ -42,14 +37,16 @@ public class LoginScreen extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void OnLogin(View view)
+    public void openIdle(View view)
     {
-        String username = UsernameET.getText().toString();
-        String password = PasswordET.getText().toString();
-        String type = "login";
-        BackgroundWorker BGWorker = new BackgroundWorker(this);
-        BGWorker.execute(type, username, password);
+        Intent a = new Intent(this, AddFood.class);
+        startActivity(a);
     }
+
+
+
+
+
 
 
 }
