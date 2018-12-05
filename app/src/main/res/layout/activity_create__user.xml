@@ -14,7 +14,7 @@
         android:layout_marginStart="80dp"
         android:layout_marginLeft="80dp"
         android:layout_marginBottom="42dp"
-        android:onClick="openCreateUserActivity"
+        android:onClick="OnReg"
         android:text="Finish Creating User"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"

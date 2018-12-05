@@ -2,12 +2,13 @@ package com.badtechnologies.bad;
 
 
 
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.Toast;
+
 
 
 public class LoginScreen extends AppCompatActivity {
@@ -26,6 +27,7 @@ public class LoginScreen extends AppCompatActivity {
         final EditText et = (EditText) findViewById(R.id.UN);
         final EditText et1 = (EditText) findViewById(R.id.PW);
 
+
         findViewById(R.id.button_login).setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View v)
@@ -34,7 +36,7 @@ public class LoginScreen extends AppCompatActivity {
                     String pw = et1.getText().toString();
 
                     login(un, pw);
-
+                    homey(v);
                 }
 
         });
@@ -48,37 +50,44 @@ public class LoginScreen extends AppCompatActivity {
 
             public void login(String u, String p)
             {
+                AlertDialog ad;
+                String message = "Successfuly Logged in!";
+                ad = new AlertDialog.Builder(this).create();
+                ad.setMessage(message);
+
                 if ((u.equals("BradSutton123") && p.equals("123"))) {
-                    Intent intent = new Intent(this, home.class);
-                    startActivity(intent);
+                    ad.show();
                 }
                 else if ((u.equals("Will123") && p.equals("234")))
                 {
-                    Intent intent = new Intent(this, home.class);
-                    startActivity(intent);
+                    ad.show();
+
                 }
                 else if ((u.equals("Kysa123") && p.equals("345")))
                 {
-                    Intent intent = new Intent(this, home.class);
-                    startActivity(intent);
+                    ad.show();
                 }
                 else if ((u.equals("Maddy123") && p.equals("456")))
                 {
-                    Intent intent = new Intent(this, home.class);
-                    startActivity(intent);
+                    ad.show();
                 }
                 else if ((u.equals("Wheat123") && p.equals("567")))
                 {
-                    Intent intent = new Intent(this, home.class);
-                    startActivity(intent);
+                    ad.show();
                 }
                 else
                 {
-                    Toast.makeText(this, "Error Logging in", Toast.LENGTH_SHORT).show();
+                    ad.setMessage("Failed Log In!");
+                    ad.show();
                 }
 
 
             }
 
+            public void homey(View v)
+            {
+                Intent intent = new Intent(this, home.class);
+                startActivity(intent);
+            }
 
         }
